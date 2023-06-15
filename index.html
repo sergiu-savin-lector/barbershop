@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Parte pentru browser/motoare de cautare -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Textul care va aparea in bara de sus a browserului-->
+        <title>BarberShop</title>
+    </head>
+    <!-- Partea pe care o vedem efectiv in pagina -->
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Link spre pagina acasa (daca este pe un server, poate fi direct pagina 'https:/www.siteulmeu.ro')-->
+            <a href="index.html">
+                <!--
+                Imagine cu logo, pentru scalabilitate (afisare corecta mobil/desktop) se recomanda sa fie
+                format scalabil (svg), iar pentru a eficientiza imaginea se recomanda https://squoosh.app/,
+                putem seta dimensiunile prin atribute (height, width)
+                -->
+                <img src="images/logo.svg" alt="BarberShop" height="55.46px" />
+            </a>
+            <!-- Sectiunea nav, trebuie sa contina doar link-urile pentru navigatie -->
+            <nav>
+                <!-- Scurtatura pentru scriere rapida in editor: ul>li*4>a -->
+                <!-- De regula, pentru ca nu este importanta ordinea, la meniu se foloseste ul (Unordered List) -->
+                <ul>
+                    <!-- Vom adauga valoare pentru href atunci cand avem create si restul paginilor  -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Services and prices</a></li>
+                    <li><a href="">Barbers</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <!-- Pentru telefon, exista o metoda de a forma numarul, folosind tel:+01234 pentru asta -->
+            <!-- De asemenea, pentru a trimite un email, putem folosi mailto:a.popa@goit.global -->
+            <a href="tel:+380441111111">+38 044 111 11 11</a>
+            <!--
+              Link-urile pot fi externe, dar e recomandat sa folosim target="_blank", pentru ca utilizatorii
+              sa nu isi piarda activitatea de pe site-ul nostru.
+
+              rel = „noopener” pe care îl utilizați pe toate linkurile care se deschid în filele noi folosind target="_blank".
+              Există implicații de securitate dacă nu utilizați valoarea noopener pe linkurile dvs. care se deschid în
+              filele noi. Un atacator rău intenționat poate utiliza obiectul window.opener pentru a schimba conținutul și
+              locația paginii de origine.
+
+
+              rel = „noreferrer” poate avea un scop similar cu noopener, mai ales în browserele mai vechi. Prin urmare, are
+              sens să le folosim pe amândouă. În plus, noreferrerul poate afecta analiza și poate raporta traficul ca direct
+              în loc de referrer.
+
+
+              rel = „nofollow” va informa motoarele de căutare să nu treacă link-ul către pagina legată și nu va trece la
+              PageRank. Puteți să o considerați ca pe o valoare care este utilizată atunci când doriți să vă conectați la o
+              altă pagină, dar fără a o „aproba”. Este singura valoare rel din această listă cu un efect tangibil asupra
+              eforturilor SEO.
+            -->
+            <a
+                href="https://goit.global/ro/contacts/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+            >
+                Online-booking
+            </a>
+
+            <!-- Sectiunea pentru link-uri spre Youtube/Facebook -->
+            <section>
+                <a
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Youtube</a
+                >
+                <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Facebook</a
+                >
+                <img src="images/dash_navigation-links.png" />
+            </section>
+        </header>
+        <!--
+            Avantaje main vs div:
+            - Mai usor de citit de developer ('no div soup')
+            - Site accesibil pentru persoanele cu dizabilitati (ARIA)
+            - Semantica mai buna -> SEO mai bun -> mai usor de citit de motoarele de indexare
+        -->
+        <main>
+            <!-- continutul site-ului, ce aveam in <main></main> trebuie sa fie unic pe toate paginile noastre -->
+            <!-- se pare ca avem mai multe sectiuni in design, asadar le vom separa in functie de continutul lor -->
+
+            <!-- sectiunea 'Hero' a site-ului nostru, cea care capteaza atentia utilizatorului la prima vedere (above the fold) -->
+            <section>
+                <hr />
+                <span>A hair salon for men in Kyiv</span>
+                <!--
+                Toate elementele HTML pot conține **atribute**;
+                - Atributele oferă **informații suplimentare** despre element;
+                - Atributele sunt întotdeauna indicate în **teza inițială**;
+                - Atributele vin de obicei în perechi nume/valoare, de exemplu: **nume="valoare"**.
+                - in lectiile urmatoare vom vedea cum atributul 'class' ne ajuta sa setam stiluri pe un element
+                -->
+                <h1 title="BarberShop">BarberShop</h1>
+                <p>
+                    <!--
+                    ' este un caracter care poate fi confundat de browsere,
+                    de aceea se recomanda a fi inlocuit cu varianta html entities, in cazul nostru: &apos;
+                    https://www.w3schools.com/html/html_entities.asp
+                    -->
+                    We are experts in trendy men&apos;s haircuts. We work
+                    quickly, carefully and with style.
+                </p>
+            </section>
+
+            <!-- sectiunea 'About' a site-ului nostru, cu sloganul principal si cele doua imagini -->
+            <section>
+                <img
+                    src="images/barber-img-1.png"
+                    alt="Frizer taie cu masina de tuns"
+                />
+                <img src="images/barber-img-2.png" alt="Frizer taie cu lama" />
+
+                <span><img src="images/dash_about.png" /> About</span>
+                <h2>Best Barbershop in your city</h2>
+                <h3>
+                    If you want to add more confidence to your image, you should
+                    definitely visit us.
+                </h3>
+                <p>
+                    We are a team that never stops at what has been achieved and
+                    are thirsty for changes. And when you fall into the hands of
+                    our master, you will never be the same again. We are a team
+                    that is always "on the same wave" with clients. Therefore,
+                    we are always ready to improve everyone who comes to us!
+                </p>
+                <!--
+                - folosim un button atunci cand deschide un modal, facem o actiune in cadrul paginii noastre
+                - folosim link (a href) atunci cand deschidem o pagina / navigam spre o adresa
+                - pe scurt link -> pagina/site diferite, button - actiune in pagina
+                -->
+                <button>ONLINE-BOOKING</button>
+            </section>
+        </main>
+        <!--
+        Intotdeauna sa fim atenti ca tag-urile noastre sunt inchise corect, cel mai usor mode de a ne da
+        seama ca ceva e gresit, e ca nu se va 'auto-formata' continutul de Prettier daca avem greseli
+        -->
+    </body>
+</html>
