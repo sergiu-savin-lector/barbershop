@@ -1,0 +1,16 @@
+:root {
+    --link-color: #ffffff;
+}
+
+.global-header {
+    background-color: #333333;
+}
+
+.global-header .main-navigation a,
+.global-header .main-navigation a:visited {
+    color: var(--link-color);
+}
+
+.global-header .main-navigation a.active {
+    color: red;
+}
