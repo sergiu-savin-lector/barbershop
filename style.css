@@ -35,6 +35,7 @@ ul {
 
 .global-header {
     background-color: #333333;
+    padding: 40px 50px 40px 100px;
 }
 
 .global-header .main-navigation a,
@@ -68,8 +69,8 @@ ul {
     color: var(--link-active-color);
 }
 
-.phone-number {
-    text-transform: uppercase;
+.global-header-aside {
+    background-color: white;
 }
 
 .hero-heading {
