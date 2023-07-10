@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap");
+
+:root {
+  --link-color: #ffffff;
+  --text-active: #ff6c00;
+  --link-hover-color: #f0883e;
+  --link-active-color: #ff6c00;
+  --link-social-color: #303030;
+  --link-social--hover-color: #ff6c00;
+  --text-font-family: "Open Sans", sans-serif;
+  --heading-font-family: "Raleway", sans-serif;
+  --text-color: #9da4bd;
+  --text-alternate-color: ##303030;
+  --subheading-color: #9da4bd99;
+  --heading-color: #ffffff;
+  --heading-alternate-color: #303030;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.global-aside {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 155px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px;
+}
+
+.global-aside-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.global-aside-links > * {
+  margin-top: 40px;
+}
+
+.header-container {
+  background: #363636;
+  display: flex;
+}
+
+.header-container-content {
+  flex: 1 0 auto;
+  padding: 40px 55px 40px 100px;
+}
+
+img.dash {
+  width: 60px;
+  height: 1px;
+}
+
+/* Global Header */
+.global-header a {
+  color: var(--link-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section.global-header-content {
+  background: transparent;
+  margin-top: 204px;
+  padding: 0;
+}
+
+.global-header-book-btn {
+  margin-left: 40px;
+}
+
+.global-header .main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.global-header .main-navigation ul {
+  display: flex;
+  padding-inline-start: 0;
+}
+
+.global-header .main-navigation ul li + li {
+  margin-left: 40px;
+}
+
+.global-header .main-navigation a,
+.global-header .main-navigation a:visited {
+  letter-spacing: 0.1em;
+}
+
+.global-header .main-navigation .phone-number {
+  text-transform: uppercase;
+}
+
+.global-header a.active {
+  color: var(--link-active-color);
+}
+
+.global-header a:hover,
+.global-header a:focus {
+  color: var(--link-hover-color);
+}
+
+a.social-link {
+  color: var(--link-social-color);
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+}
+
+a.social-link:hover,
+a.social-link:focus {
+  color: var(--link-social--hover-color);
+}
+
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Generic */
+.section {
+  background: #363636;
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+  padding: 130px 55px;
+}
+
+.section-heading {
+  margin-top: 20px;
+  font-size: 42px;
+  line-height: 49.31px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.section-heading + * {
+  margin-top: 20px;
+}
+
+.section address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.section address a {
+  color: var(--text-color);
+}
+
+.section address a:hover,
+.section address a:focus {
+  color: var(--link-color);
+}
+.section .section-sub-heading {
+  font-size: 11px;
+  line-height: 14.98px;
+  color: var(--subheading-color);
+}
+
+.section h1,
+.section h2 {
+  color: var(--heading-color);
+}
+
+.section--light {
+  background: #ffffff;
+  color: #555555;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.section--light h1,
+.section--light .section-heading,
+.section--light .section-sub-heading {
+  color: var(--heading-alternate-color);
+}
+
+.heading-with-dash {
+  display: flex;
+  align-items: center;
+}
+
+.heading-with-dash h3 {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.hero-heading {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: var(--heading-color);
+  margin-top: 20px;
+}
+
+.control-buttons {
+  margin-top: 142px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+.section-description > * + * {
+  margin-top: 20px;
+}
+
+.section-with-gray-bg {
+  background: #f7f7f7;
+}
+
+.section-with-two-columns {
+  display: flex;
+}
+
+.section-with-two-columns > *:nth-child(2) {
+  margin-left: 64px;
+}
+
+.section-with-two-columns > * {
+  flex: 0 1 50%;
+}
+
+.section-images {
+  display: flex;
+}
+
+.section-images img + img {
+  margin-left: 30px;
+}
+
+.about-section .button {
+  margin-top: 40px;
+}
+
+.subheading-with-dash::before {
+  content: "";
+  display: inline-block;
+  background: rgba(157, 164, 189, 0.4);
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.subheading-with-dash {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+/* Why Us */
+
+.why-us-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.why-us-list .feature {
+  width: 170px;
+  text-align: center;
+  margin: 30px;
+}
+
+.why-us-list .feature:nth-child(2n) {
+  margin-top: 75px;
+}
+
+.why-us-list .feature-title {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+  letter-spacing: 0.05em;
+}
+
+.why-us-list .feature-title sup {
+  color: var(--text-active);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  top: -24px;
+}
+
+.why-us-list .feature-description {
+  width: 122px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* List */
+.barbers-list {
+  display: flex;
+}
+
+.barbers-list li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.barbers-list li + li {
+  margin-left: 30px;
+}
+
+.barbers-list li em {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-active);
+}
+
+.prices-section .button {
+  margin-top: 50px;
+}
+
+.prices {
+  margin-top: 46px;
+  display: flex;
+}
+
+.prices-list {
+  flex: 1 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  padding: 30px 40px;
+}
+
+.prices-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.prices-list li span {
+  flex: 0 1 content;
+}
+
+.prices-list li .prices-dash {
+  flex: 1 0 auto;
+  height: 1px;
+  background: #9da4bd1f;
+}
+
+.prices-list li > span + span {
+  margin-left: 6px;
+}
+
+/* Motto */
+.motto-cards {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Booking and Contact Section */
+.booking-and-contact-section {
+  display: flex;
+}
+
+.booking-and-contact-section > .section {
+  flex: 1 0 auto;
+}
+
+.booking-and-contact-section .section:nth-child(2) {
+  padding-left: 100px;
+}
+
+.button-transparent {
+  margin-top: 232px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 12px 38px;
+  width: 160px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.booking-form {
+  background: #191c26;
+}
+
+.contacts-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.contacts-address .contact-address-item {
+  gap: 20px;
+  display: flex;
+  font-style: normal;
+}
+
+.working-hours {
+  margin-top: 70px;
+}
+
+.working-hours p {
+  margin-top: 20px;
+}
