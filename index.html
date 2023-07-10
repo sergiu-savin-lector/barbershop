@@ -14,108 +14,126 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="global-header">
-        <a href="index.html">
-            <img src="images/logo.svg" alt="Logo" />
-        </a>
-
-        <nav class="main-navigation">
-            <ul>
-                <li><a href="/about.html" class="active">About</a></li>
-                <li><a href="/services.html">Services and Prices</a></li>
-                <li><a href="/barbers.html">Barbers</a></li>
-                <li><a href="/contact.html">Contacts</a></li>
-            </ul>
-        </nav>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="button">BOOK A SERVICE</button>
-        <aside class="global-header-aside">
-            <a class="social-link" href="https://youtube.com" target="_blank" rel="nofollow noopener noreferrer">
-                Youtube
+    <div class="container header-container">
+        <aside class="global-aside">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Logo" />
             </a>
-            <a class="social-link active" href="https://instagram.com" target="_blank"
-                rel="nofollow noopener noreferrer">
-                Instagram
-            </a>
-            <img src="images/header_section-divider.png" alt="|" />
+            <div class="global-aside-links">
+                <a class="social-link" href="https://youtube.com" target="_blank" rel="nofollow noopener noreferrer">
+                    Youtube
+                </a>
+                <a class="social-link active" href="https://instagram.com" target="_blank"
+                    rel="nofollow noopener noreferrer">
+                    Instagram
+                </a>
+                <img src="images/header_section-divider.png" alt="|" class="dash" />
+            </div>
         </aside>
-    </header>
 
+        <div class="header-container-content">
+            <!-- Header -->
+            <header class="global-header">
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="/about.html" class="active">About</a></li>
+                        <li><a href="/services.html">Services and Prices</a></li>
+                        <li><a href="/barbers.html">Barbers</a></li>
+                        <li><a href="/contact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="tel:+380441111111">+38 044 111 11 11</a>
+                    <button class="button">BOOK A SERVICE</button>
+                </div>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="section hero-section">
+                <img src="images/landing-dash.svg" alt="-" />
+                <h3>A hair salon for men in Kyiv</h3>
+                <h1 class="hero-heading" title="BarberShop">BarberShop</h1>
+                <p>
+                    We are experts in trendy men's haircuts. <br />
+                    We work quickly, carefully, and tastefully.
+                </p>
+                <div class="control-buttons">
+                    <button>Prev</button>
+                    <button>Next</button>
+                </div>
+                
+            </section>
+        </div>
+
+    </div>
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="section hero-section">
-            <img src="images/landing-dash.svg" alt="-" />
-            <h3>A hair salon for men in Kyiv</h3>
-            <h1 class="hero-heading" title="BarberShop">BarberShop</h1>
-            <p>
-                We are experts in trendy men's haircuts. <br />
-                We work quickly, carefully, and tastefully.
-            </p>
-            <button>Prev</button>
-            <button>Next</button>
-        </section>
+
 
         <!-- About -->
-        <section class="section section-with-light-bg">
+        <section class="section section-light about-section">
             <img src="images/about_img1.jpg" alt="Frizer tunde barba" />
             <img src="images/about_img2.png" alt="Frizer taie barba" />
-            <img src="images/about-line.png" alt="-" width="60px" height="1px" />
-            <h3 class="section-sub-heading">About</h3>
-            <h2 class="section-heading">The Best Barbershop in Your City</h2>
-            <p>
-                If you want to add more confidence to your image, you are definitely in the right place.
-            </p>
-            <p class="small-text">
-                We are a team that never rests on its laurels and yearns for change. And once you fall
-                into the hands of our master, you will never be the same again. We are a team that is
-                always on the same wavelength with clients. Therefore, we are always ready to improve
-                everyone who comes to us!
-            </p>
-            <button class="button">Book a service</button>
+            <div class="section-description">
+                <img src="images/about-line.png" alt="-" width="60px" height="1px" />
+                <h3 class="section-sub-heading">About</h3>
+                <h2 class="section-heading">The Best Barbershop in Your City</h2>
+                <p>
+                    If you want to add more confidence to your image, you are definitely in the right place.
+                </p>
+                <p class="small-text">
+                    We are a team that never rests on its laurels and yearns for change. And once you fall
+                    into the hands of our master, you will never be the same again. We are a team that is
+                    always on the same wavelength with clients. Therefore, we are always ready to improve
+                    everyone who comes to us!
+                </p>
+                <button class="button">Book a service</button>
+            </div>
         </section>
 
         <!-- Services and Prices -->
-        <section class="section">
+        <section class="section section-dark">
             <h3 class="section-sub-heading">Spend time in the company of the best craftsmen</h3>
             <h2>Services and Prices</h2>
-            <ul class="services-list">
-                <li>
-                    <span>Men's Haircut</span>
-                    <span>from 300 UAH </span>
-                </li>
-                <li>
-                    <span>Beard Trimt</span>
-                    <span>from 200 UAH</span>
-                </li>
-                <li>
-                    <span>Mustache Trim</span>
-                    <span>from 200 UAH</span>
-                </li>
-                <li>
-                    <span>Straight Razor Shave</span>
-                    <span>from 200 UAH</span>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <span>Men's Haircut</span>
-                    <span>from 300 UAH </span>
-                </li>
-                <li>
-                    <span>Beard Trimt</span>
-                    <span>from 200 UAH</span>
-                </li>
-                <li>
-                    <span>Mustache Trim</span>
-                    <span>from 300 UAH</span>
-                </li>
-                <li>
-                    <span>Kids Haircut (&lsaquo;12 y.o.)</span>
-                    <span>from 200 UAH</span>
-                </li>
-            </ul>
+            <div class="prices">
+                <ul class="services-list">
+                    <li>
+                        <span>Men's Haircut</span>
+                        <span>from 300 UAH </span>
+                    </li>
+                    <li>
+                        <span>Beard Trimt</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                    <li>
+                        <span>Mustache Trim</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                    <li>
+                        <span>Straight Razor Shave</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                </ul>
+                <ul class="services-list">
+                    <li>
+                        <span>Men's Haircut</span>
+                        <span>from 300 UAH </span>
+                    </li>
+                    <li>
+                        <span>Beard Trimt</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                    <li>
+                        <span>Mustache Trim</span>
+                        <span>from 300 UAH</span>
+                    </li>
+                    <li>
+                        <span>Kids Haircut (&lsaquo;12 y.o.)</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                </ul>
+            </div>
+            
             <button class="button">Book a service</button>
         </section>
 
