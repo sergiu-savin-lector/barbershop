@@ -73,7 +73,7 @@ ul {
   align-items: center;
 }
 
-.global-aside-links > * {
+.global-aside-links>* {
   margin-top: 40px;
 }
 
@@ -83,6 +83,7 @@ ul {
 }
 
 .header-container-content {
+  background: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url('./images/hero-slider-img1.png');
   flex: 1 0 auto;
   padding: 40px 55px 40px 100px;
 }
@@ -121,7 +122,7 @@ img.dash {
   padding-inline-start: 0;
 }
 
-.global-header .main-navigation ul li + li {
+.global-header .main-navigation ul li+li {
   margin-left: 40px;
 }
 
@@ -177,7 +178,7 @@ a.social-link:focus {
   color: #ffffff;
 }
 
-.section-heading + * {
+.section-heading+* {
   margin-top: 20px;
 }
 
@@ -197,6 +198,7 @@ a.social-link:focus {
 .section address a:focus {
   color: var(--link-color);
 }
+
 .section .section-sub-heading {
   font-size: 11px;
   line-height: 14.98px;
@@ -256,7 +258,8 @@ a.social-link:focus {
   line-height: 26px;
   letter-spacing: 0.02em;
 }
-.section-description > * + * {
+
+.section-description>*+* {
   margin-top: 20px;
 }
 
@@ -268,11 +271,11 @@ a.social-link:focus {
   display: flex;
 }
 
-.section-with-two-columns > *:nth-child(2) {
+.section-with-two-columns>*:nth-child(2) {
   margin-left: 64px;
 }
 
-.section-with-two-columns > * {
+.section-with-two-columns>* {
   flex: 0 1 50%;
 }
 
@@ -280,7 +283,7 @@ a.social-link:focus {
   display: flex;
 }
 
-.section-images img + img {
+.section-images img+img {
   margin-left: 30px;
 }
 
@@ -370,7 +373,7 @@ a.social-link:focus {
   letter-spacing: 0.02em;
 }
 
-.barbers-list li + li {
+.barbers-list li+li {
   margin-left: 30px;
 }
 
@@ -380,6 +383,10 @@ a.social-link:focus {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-active);
+}
+
+.prices-section {
+  background: url('./images/services-section-bg.png') #191c26;
 }
 
 .prices-section .button {
@@ -417,7 +424,7 @@ a.social-link:focus {
   background: #9da4bd1f;
 }
 
-.prices-list li > span + span {
+.prices-list li>span+span {
   margin-left: 6px;
 }
 
@@ -434,7 +441,7 @@ a.social-link:focus {
   display: flex;
 }
 
-.booking-and-contact-section > .section {
+.booking-and-contact-section>.section {
   flex: 1 0 auto;
 }
 
@@ -484,4 +491,8 @@ a.social-link:focus {
 
 .working-hours p {
   margin-top: 20px;
+}
+
+.contact-section {
+  background: url('./images/contact-section-bg.png') #191c26;
 }
