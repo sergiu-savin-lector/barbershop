@@ -13,6 +13,9 @@
   --text-alternate-color: ##303030;
   --subheading-color: #9da4bd99;
   --heading-color: #ffffff;
+  --social-icon-background-color: #ffffff;
+  --social-icon-color: #303030;
+  --social-icon-hover-color: #FF6C00;
   --heading-alternate-color: #303030;
 }
 
@@ -496,3 +499,35 @@ a.social-link:focus {
 .contact-section {
   background: url('./images/contact-section-bg.png') #191c26;
 }
+
+.icons-list {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.icons-list .icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--social-icon-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  color: var(--social-icon-color);
+}
+
+.icons-list .icon:hover,
+.icons-list .icon:focus {
+  color: var(--social-icon-hover-color);
+}
+
+.icons-list .icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* .contact-address-item svg {
+  stroke: red;
+} */
