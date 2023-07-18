@@ -45,7 +45,7 @@
             </ul>
             <div>
               <a href="tel:+380441111111">+38 044 111 11 11</a>
-              <button class="button global-header-book-btn">BOOK A SERVICE</button>
+              <button data-modal-open class="button book-a-service-btn">BOOK A SERVICE</button>
             </div>
           </nav>
         </div>
@@ -379,9 +379,21 @@
       </ul>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal is-hidden" data-modal>
+    <div class="modal-content">
+      <button class="close-btn" data-modal-close>&times;</button>
+      Continutul modalului
+    </div>
+  </div>
+
+
+
   <script>
     feather.replace()
   </script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
