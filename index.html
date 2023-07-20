@@ -101,7 +101,7 @@
                 to improve everyone who comes to us!
               </p>
             </div>
-            <button class="button">Book a service</button>
+            <button class="button book-a-service-btn-light">Book a service</button>
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@
           </ul>
         </div>
         <div class="centered-content">
-          <button class="button">Book a service</button>
+          <button class="button book-a-service-btn">Book a service</button>
         </div>
       </div>
     </section>
@@ -319,7 +319,12 @@
           <h3 class="section-sub-heading">In Latin, "barba" means "beard"</h3>
         </div>
         <ul class="motto-cards">
-          <li><img src="./images/motto_img1.png" alt="Frizer tunde parul" /></li>
+          <li class="motto-cards-elements">
+            <img src="./images/motto_img1.png" alt="Frizer tunde parul" />
+            <div class="overlay-text">
+              <h2>Text peste imagine</h2>
+            </div>
+          </li>
           <li><img src="./images/motto_img2.png" alt="Frizer pregatind barba" /></li>
           <li><img src="./images/motto_img3.png" alt="Frizer sterge barba" /></li>
           <li><img src="./images/motto_img4.png" alt="Frizer realizeaza conturul" /></li>
@@ -332,7 +337,26 @@
         <!-- Book a section -->
         <section class="section booking-form">
           <h2>Book a Service</h2>
-          <button class="button-transparent">Send</button>
+          <form action="">
+            <div class="form-row">
+              <label for="" class="form-group">
+                <input type="text" name="username" placeholder="Name*" class="input" required>
+                <span class="label-text">Name</span>
+              </label>
+
+              <label class="form-group">
+                <input type="text" placeholder="Telephone*" name="telephone" class="input" required>
+                <span class="label-text">Telephone</span>
+              </label>
+            </div>
+
+            <label class="form-group">
+              <textarea name="message" rows="3" placeholder="Message" class="input"></textarea>
+              <span class="label-text">Message</span>
+            </label>
+            <button class="button-transparent">Send</button>
+          </form>
+          
         </section>
 
         <!-- Contacts -->
