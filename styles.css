@@ -18,6 +18,7 @@
   --social-icon-hover-color: #FF6C00;
   --heading-alternate-color: #303030;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --general-white: #fff;
 }
 
 * {
@@ -608,7 +609,7 @@ form .input {
   transition: border var(--transition), color var(--transition);
 }
 
-form .input:placeholder-shown ~ .label-text {
+form .input:placeholder-shown~.label-text {
   display: none;
   top: 0;
 }
@@ -641,7 +642,6 @@ form .form-group {
   align-items: center;
   transition: transform var(--transition);
   pointer-events: auto;
-  opacity: 0.5;
 }
 
 .modal-content {
@@ -686,4 +686,106 @@ form .form-group {
   background-color: grey;
   position: absolute;
   bottom: 0;
+}
+
+.form-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.form-modal input {
+  flex: 2;
+  width: 100%;
+}
+
+.form-modal input:focus {
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #2196F3;
+}
+
+.form-modal input:focus-within > svg {
+  color: #2196F3;
+}
+
+.form-modal.terms-conditions-checkbox {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+.agree-check .terms-info {
+  margin-left: 8px;
+  color: #2196F3;
+  font-weight: bold;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.agree-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.agree-check .checkmark {
+  appearance: none;
+}
+
+.agree-check .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  fill: none;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agree-check .checkmark:focus+.icon,
+.agree-check .checkmark:checked:focus+.icon {
+  outline: 2px solid #212121;
+}
+
+.agree-check .checkmark:checked+.icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  fill: #ffffff;
+  outline: none;
+  stroke: var(--white);
+  stroke-width: 0.2;
+}
+
+.service-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--dark-gray);
+}
+
+.form-modal .submit-button {
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3;
+  cursor: pointer;
+  align-self: center;
+  border: none;
+  border-radius: 4px;
+  color: var(--general-white);
 }
