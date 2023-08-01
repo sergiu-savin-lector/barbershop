@@ -67,23 +67,7 @@ a {
 }
 
 .global-aside {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 155px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 55px;
-}
-
-.global-aside-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.global-aside-links>* {
-  margin-top: 40px;
+  display: none;
 }
 
 .header-container {
@@ -95,6 +79,21 @@ a {
   background: linear-gradient(rgba(25, 28, 38, 0.20), rgba(25, 28, 38, 0.20)), url('./images/hero-slider-img1.png');
   flex: 1 0 auto;
   padding: 40px 55px 40px 100px;
+}
+
+.header-container-content .mobile-logo {
+  position: absolute;
+  top: 40px;
+  left: 31px;
+}
+
+.header-container-content .menu-button {
+  color: white;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 48px;
+  right: 31px;
 }
 
 img.dash {
@@ -151,8 +150,7 @@ img.dash {
 }
 
 .global-header .main-navigation {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
 .global-header .main-navigation ul {
@@ -707,7 +705,7 @@ form .form-group {
   border: 1px solid #2196F3;
 }
 
-.form-modal input:focus-within > svg {
+.form-modal input:focus-within>svg {
   color: #2196F3;
 }
 
@@ -717,8 +715,6 @@ form .form-group {
   justify-content: center;
   cursor: pointer;
 }
-
-
 
 .agree-check .terms-info {
   margin-left: 8px;
@@ -788,4 +784,44 @@ form .form-group {
   border: none;
   border-radius: 4px;
   color: var(--general-white);
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .global-aside {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 155px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px;
+  }
+
+  .global-aside-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .global-aside-links>* {
+    margin-top: 40px;
+  }
+
+  .header-container-content .mobile-logo {
+    display: none;
+  }
+}
+
+/* Desktop design */
+@media screen and (min-width: 1280px) {
+  .global-header .main-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-container-content .menu-button {
+    display: none;
+  }
 }
