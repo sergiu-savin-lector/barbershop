@@ -94,6 +94,7 @@ a {
   position: absolute;
   top: 48px;
   right: 31px;
+  cursor: pointer;
 }
 
 img.dash {
@@ -318,7 +319,7 @@ a.social-link:focus {
 }
 
 .section-images {
-  display: flex;
+  display: none;
 }
 
 .section-images img+img {
@@ -401,6 +402,8 @@ a.social-link:focus {
 /* List */
 .barbers-list {
   display: flex;
+  flex-direction: column;
+  gap: 76px;
 }
 
 .barbers-list li {
@@ -409,6 +412,14 @@ a.social-link:focus {
   line-height: 25px;
   text-align: center;
   letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.barbers-list li picture {
+  display: flex;
+  justify-content: center;
 }
 
 .barbers-list li+li {
@@ -786,6 +797,43 @@ form .form-group {
   color: var(--general-white);
 }
 
+.js-menu-container {
+  display: none;
+}
+
+.js-menu-container.is-open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  height: 100%;
+  padding: 48px 40px;
+  z-index: 1;
+}
+
+.js-menu-container .js-close-menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  align-self: flex-end;
+}
+
+.menu-drawer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-drawer-navigation .book-a-service-btn-light {
+  width: 194px;
+}
+
+.menu-drawer-social {
+  display: flex;
+}
+
 
 /* Tablet */
 @media screen and (min-width: 768px) {
@@ -809,6 +857,10 @@ form .form-group {
     margin-top: 40px;
   }
 
+  .section-images {
+    display: flex;
+  }
+
   .header-container-content .mobile-logo {
     display: none;
   }
@@ -822,6 +874,14 @@ form .form-group {
   }
 
   .header-container-content .menu-button {
+    display: none;
+  }
+
+  .barbers-list {
+    flex-direction: row;
+  }
+
+  .js-menu-container {
     display: none;
   }
 }

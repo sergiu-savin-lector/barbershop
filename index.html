@@ -14,6 +14,40 @@
 </head>
 
 <body>
+
+  <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <nav class="menu-drawer-navigation">
+      <ul>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#services">Services and Prices</a></li>
+        <li><a href="#barbers">Barbers</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+      <a href="tel:+380441111111">+38 044 111 11 11</a>
+      <button data-modal-open class="button book-a-service-btn-light">BOOK A SERVICE</button>
+    </nav>
+
+    <div class="menu-drawer-social">
+      <img src="images/landing-dash.svg" alt="-" class="dash" />
+      <div class="menu-drawer-social-links">
+        <a class="link social-link" href="https://youtube.com" target="_blank" rel="nofollow noopener noreferrer">
+          Youtube
+        </a>
+        <a class="link social-link" href="https://instagram.com" target="_blank" rel="nofollow noopener noreferrer">
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <div class="container header-container">
     <!-- Logo and Social Links -->
@@ -56,7 +90,7 @@
         </div>
       </header>
 
-      <button class="menu-button">
+      <button class="menu-button js-open-menu">
         <i data-feather="menu"></i>
       </button>
 
@@ -234,7 +268,23 @@
         <h2 class="section-heading">Our Barbers</h2>
         <ul class="barbers-list">
           <li>
-            <img src="./images/barber_john-smith.jpg" alt="John Smith" /><br />
+            <!-- Picture replacement -->
+            <picture>
+
+              <!-- Desktop -->
+
+              <source media="(min-width:1280px)"
+                srcset="images/barber_john_smith-d.png, images/barber_john_smith-d-2x.png">
+
+              <!-- Tablet -->
+
+              <source media="(min-width:768px)"
+                srcset="images/barber_john_smith-t.png, images/barber_john_smith-t-2x.png">
+
+              <!-- Mobile -->
+              <source srcset="images/barber_john_smith-m.png, images/barber_john_smith-m-2x.png">
+              <img src="images/barber_john_smith-m.png" alt="John Smith" /><br />
+            </picture>
             <span>John Smith<br /></span>
             <em>Extreme Barber</em>
             <div class="icons-list">
@@ -334,7 +384,7 @@
               <h2>Text peste imagine</h2>
             </div>
           </li>
-          <li><img src="./images/motto_img2.png" alt="Frizer pregatind barba" /></li>
+          <li><img src="images/motto_img2.png" alt="Frizer pregatind barba" /></li>
           <li><img src="./images/motto_img3.png" alt="Frizer sterge barba" /></li>
           <li><img src="./images/motto_img4.png" alt="Frizer realizeaza conturul" /></li>
         </ul>
@@ -436,17 +486,13 @@
         </label>
 
         <label class="agree-check">
-          <input
-            type="checkbox"
-            class="checkmark"
-            name="agreement"
-            value="agree"
-          />
+          <input type="checkbox" class="checkmark" name="agreement" value="agree" />
           <svg class="icon" width="16" height="16">
             <use href="./icons.svg#icon-checkbox"></use>
           </svg>
           <span class="service-text">
-            I agree with the newsletter and accept the <a href=""><span class="terms-info">Terms and Conditions</span></a>
+            I agree with the newsletter and accept the <a href=""><span class="terms-info">Terms and
+                Conditions</span></a>
           </span>
         </label>
         <div class="form-modal">
@@ -461,6 +507,7 @@
   <script>
     feather.replace()
   </script>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
